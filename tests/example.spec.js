@@ -33,7 +33,10 @@ test('login page submit', async ({ page }) => {
   await usernameInput.fill('admin');
   await passwordInput.fill('password');
   await submitButton.click();
-
+  // await page.fill('#username', 'admin');
+  // await page.fill('#password', 'password');
+  // await page.click('button[type="submit"]');
+  
   //expect page to have alert with text "Login successful"
   page.on('dialog', async dialog => {
     console.log(dialog.message());
