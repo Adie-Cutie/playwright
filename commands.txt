@@ -1,0 +1,6 @@
+npm -v
+npm init playwright@latest
+npx playwright test //headless run- process in bg
+npx playwright test --project={browser} //headless run
+npx playwright test {browser if needed} --debug //to show all steps - headful mode run
+npx playwright codegen {url} //to generate automatically like web recorder
